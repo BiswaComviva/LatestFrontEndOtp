@@ -1,0 +1,13 @@
+.alert-shown {
+    opacity: 1;
+    transition: all 150ms linear;
+  }
+  
+  .alert-hidden {
+    opacity: 0;
+    transition: all 150ms linear;
+  }
+
+  .hidden { 
+    display:none; 
+  }
