@@ -4,7 +4,7 @@ export const getUser = userid => {
         const body = {
             "userid" : userid
         } 
-        return   axios.post( ' https://otpapplogin.herokuapp.com/otps', body , {
+        return   axios.post( 'http://localhost:4000/otps', body , {
             headers: {
               'content-type': 'application/json',
             },
@@ -24,7 +24,7 @@ export const getUser = userid => {
         const body = {
             "userid" : userid
         } 
-        return   axios.post( ' https://otpapplogin.herokuapp.com/otps/'+otp, body , {
+        return   axios.post( 'http://localhost:4000/otps/'+otp, body , {
             headers: {
               'content-type': 'application/json',
             },
@@ -42,7 +42,7 @@ export const getUser = userid => {
     }
 
     export const logOut = (userid) => {
-        return   axios.get( ' https://otpapplogin.herokuapp.com/otps/logout/'+userid ,{
+        return   axios.get( 'http://localhost:4000/otps/logout/'+userid ,{
             headers: {
               'content-type': 'application/json',
             },

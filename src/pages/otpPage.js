@@ -173,6 +173,7 @@ class otppage extends Component {
         <form onSubmit={this.onSubmit}>
         <div className="wrap" onClick={this.handleClick}>
           <input
+            type="number"
             value=""
             ref={this.input}
             onChange={this.handleChange}
